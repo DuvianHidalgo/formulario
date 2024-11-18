@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <!--framework css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+       
+    <div class="container">
+        <!--etiqueta para los formularios-->
+        <form action="/recibirForm.html" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="tDoc">Tipo Documento</label>
+                <input type="text" id="tDoc" name="tDoc">
+                <br>
+                <br>
+                <label for="nDoc">*Nro. Documento</label>
+                <input type="text" id="nDoc" name="nDoc" required>
+                <br>
+                <br>
+                <label for="nombre">Nombres</label>
+                <input type="text" id="nombre" name="nombre" value="Duvian" disabled>
+                <br>
+                <br>
+                <label for="apellido">Apellidos</label>
+                <input type="text" id="apellido" name="apellido" >
+                <br>
+                <br>
+                <label for="fecha">escoja su mes y año de nacimiento</label>
+                    <input type="month" id="fecha">
+                <br>
+                <br>
+                <label for="">correo</label>
+                    <input type="email" id="email" >
+                <label for="contraseña">Contraseña</label>
+                    <input type="password" id="contraseña">
+                <br>
+                <br>
+                <label for="genero">Genero</label>
+                    <input type="radio" name="genero" value="F">Femenino
+                    <input type="radio" name="genero" value="M">Masculino
+                    <input type="radio" name="genero" value="O">Otro 
+                    <br>
+                    <label for="">Nacionalidad</label>
+                     <br>
+                    <select name="pais" id="pais" multiplle size="5"> 
+                        <option value="">selecciones Nacionalidad</option>
+                        <option value="">Colombiano/a</option>
+                        <option value="">Venezolano/a</option>
+                        <option value="">Argentino/a</option>
+                        <option value="">Mexicano/a</option>
+                        <option value="">Chileno/a</option>
+                    </select>
+
+                </fieldset>
+
+
+                <br>
+                <br>
+        <fieldset>
+            <legend>Gustos</legend>
+                <label for="hobbies">Hobbies</label>
+            
+                    <input type="checkbox" name="hobby1" id="hobby1">Música
+                    <input type="checkbox" name="hobby2" id="hobby2">Pintar
+                    <input type="checkbox" name="hobby3" id="hobby3">Deportes
+                    <input type="checkbox" name="hobby4" id="hobby4">Leer
+                    <input type="checkbox" name="hobby5" id="hobby5">Bailar
+                <br>
+                <br>
+                <label for="pasion">¿qué le apasiona?</label>
+                    <br>
+                    <textarea cols="30" rows="5" name="pasion" id="pasion">describa...</textarea>
+                <br>
+                <br>
+            
+        </fieldset>
+        
+            <br>
+            <br>
+            
+            <br>
+            <br>
+            <label for="ciudad">Ciudad</label>
+                <input list="ciudad">
+                <datalist id="ciudad">
+                    <option value="Medellín"></option>
+                    <option value="Bogotá"></option>
+                    <option value="Barranquilla"></option>
+                    <option value="Barrancabermeja"></option>
+                    <option value="Cali"></option>
+                    <option value="Bello"></option>
+                    <option value="Itagüi"></option>
+                </datalist>
+                <option value=""></option>
+                <label for="file">Suba su hoja de vida</label>
+                    <input type="file" id="file">
+                    <br>
+
+
+                <button type="buttom" onclick="alert('hola a todos')">Saludo</button>
+                <button type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#EA3323"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg>
+                </button>
+         </form>
+    </div>
+     
+
+    <!--framework js de bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
